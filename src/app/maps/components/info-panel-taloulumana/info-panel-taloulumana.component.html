@@ -2,13 +2,13 @@
   (click)="toggleInfoPanel()" 
   class="info-toggle-button"
   *ngIf="!isInfoPanelVisible && isMobileScreen">
-  📌 Mostrar Información
+  📌 Información
 </button>
 <div class="info-panel" *ngIf="isInfoPanelVisible || !isMobileScreen" >
     <button 
       (click)="toggleInfoPanel()"
       class="close-panel-button">
-      ✖️
+      ✖️ 
     </button>
     <div class="info-section">
         <h3>Docentes</h3>
