@@ -1,0 +1,199 @@
+<button 
+  (click)="toggleInfoPanel()" 
+  class="info-toggle-button"
+  *ngIf="!isInfoPanelVisible && isMobileScreen">
+  📌 Mostrar Información
+</button>
+<div class="info-panel" *ngIf="isInfoPanelVisible || !isMobileScreen" >
+    <button 
+      (click)="toggleInfoPanel()"
+      class="close-panel-button">
+      ✖️
+    </button>
+    <div class="info-section">
+        <h3>Docentes</h3>
+        <img src="../../../../assets/Docentes.jpeg" alt="Docentes" class="info-image"
+            (click)="showLargeImage('../../../../assets/Docentes.jpeg')">
+        <ul class="docente-list">
+            <li>Clemencia Polanco: <span>docente del grado quinto</span></li>
+            <li>Dora Gonzales: <span>docente del grado cuarto</span></li>
+            <li>Saira Ramires: <span>docente del grado cuarto</span></li>
+            <li>Miltesi Gonzales: <span>docente del grado tercero</span></li>
+            <li>Cristina: <span>docente del grado tercero</span></li>
+            <li>Laudith: <span>docente del grado segundo</span></li>
+            <li>Saudith Weber: <span>docente del grado primero</span></li>
+            <li>Daivis Cambar: <span>docente del grado primero</span></li>
+            <li>Maria Celmira: <span>docente del grado prescolar</span></li>
+            <li>Mayerli Cambar: <span>docente del grado prescolar</span></li>
+        </ul>
+    </div>
+    <div class="info-section">
+        <h3>Estudiantes</h3>
+        <img src="../../../../assets/Estudiantes.jpeg" alt="Estudiantes" class="info-image"
+        (click)="showLargeImage('../../../../assets/Estudiantes.jpeg')" />
+        <p>Estudiantes de la comunidad Taloulumana de la Institucion Educativa Indígena No. 2. </p>
+    </div>
+    <div class="info-section">
+        <h3>Infraestructura de la Institución</h3>
+        <div class="infrastructure-list">
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Salon de Laudith.jpeg" alt="Salones de clases"
+                (click)="showLargeImage('../../../../assets/Salon de Laudith.jpeg')">
+                <p>8 salones de clases</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Sala de informatica.jpeg" alt="Informatica"
+                (click)="showLargeImage('../../../../assets/Sala de informatica.jpeg')">
+                <p>1 Sala de Informatica</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/RH.jpeg" alt="RH"
+                (click)="showLargeImage('../../../../assets/RH.jpeg')">
+                <p>2 RH para el aseo</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Baños.jpeg" alt="Baños"
+                (click)="showLargeImage('../../../../assets/Baños.jpeg')">
+                <p>2 baños</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Comedor.jpeg" alt="Comedor"
+                (click)="showLargeImage('../../../../assets/Comedor.jpeg')">
+                <p>1 comedor en construcción</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Alberca.jpeg" alt="Alberca"
+                (click)="showLargeImage('../../../../assets/Alberca.jpeg')">
+                <p>1 alberca</p>
+            </div>
+            <div class="infrastructure-item">
+                <img src="../../../../assets/Alberca.jpeg" alt="Tanque de agua"
+                (click)="showLargeImage('../../../../assets/Alberca.jpeg')">
+                <p>1 tanque de agua</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <div class="zone-container">
+            <div class="zone-item safe-zone">
+                <img src="../../../../assets/zona-segura.png" alt="Safe Zone Icon" class="zone-icon" />
+                <div class="zone-description">
+                    <strong>Safe Zone:</strong> Ubicados en casas de vecinos y salones de la comunidad que conocen a los estudiantes.
+                </div>
+            </div>
+            <div class="zone-item unsafe-zone">
+                <img src="../../../../assets/advertencia.png" alt="Unsafe Zone Icon" class="zone-icon" />
+                <div class="zone-description">
+                    <strong>Unsafe Zone:</strong> Lugares peligrosos como la alberca, áreas con maleza, carreteras y moteles.
+                </div>
+            </div>
+            <div class="zone-item green-zone">
+                <img src="../../../../assets/parque.png" alt="Green Zone Icon" class="zone-icon" />
+                <div class="zone-description">
+                    <strong>Green Zone:</strong> Zonas verdes como el trupillo y el palo de mamon.
+                </div>
+            </div>
+            <div class="zone-item classroom">
+                <img src="../../../../assets/salon-de-clases.png" alt="Classroom Icon" class="zone-icon" />
+                <div class="zone-description">
+                    <strong>Classroom:</strong> Salones de clase.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h3>Factores de Riesgo en la Institución y fuera de ella</h3>
+    
+        <h5>Riesgos Sociales Internos:</h5>
+        <dl>
+            <dt>Discriminación o exclusión:</dt>
+            <dd>Diferencias culturales pueden llevar a la exclusión o bullying entre estudiantes.</dd>
+            <dt>Impacto:</dt>
+            <dd>Baja autoestima, rendimiento escolar deficiente, deserción.</dd>
+            <dt>Prevención:</dt>
+            <dd>Programas educativos interculturales, promoción del respeto y valoración de la diversidad cultural.</dd>
+    
+            <dt>Presión académica:</dt>
+            <dd>La educación estandarizada podría no adaptarse al modo de vida indígena.</dd>
+            <dt>Impacto:</dt>
+            <dd>Estrés, desmotivación, deserción.</dd>
+            <dt>Prevención:</dt>
+            <dd>Adaptación del currículo para ser culturalmente relevante y flexible.</dd>
+        </dl>
+    
+        <h5>Riesgos Sociales Externos:</h5>
+        <dl>
+            <dt>Responsabilidades familiares:</dt>
+            <dd>Muchos estudiantes pueden tener tareas domésticas importantes, como el cuidado de hermanos o ayuda en labores.</dd>
+            <dt>Impacto:</dt>
+            <dd>Fatiga, falta de tiempo para tareas escolares, ausentismo.</dd>
+            <dt>Prevención:</dt>
+            <dd>Flexibilidad en horarios y tareas escolares, y programas de apoyo escolar.</dd>
+    
+            <dt>Desplazamiento o reubicación:</dt>
+            <dd>Conflictos o presiones externas pueden causar desplazamientos.</dd>
+            <dt>Impacto:</dt>
+            <dd>Deserción, interrupción de la educación.</dd>
+            <dt>Prevención:</dt>
+            <dd>Programas de educación móvil o flexible, y apoyo psicosocial.</dd>
+        </dl>
+    
+        <h5>Riesgos Naturales Internos:</h5>
+        <dl>
+            <dt>Falta de acceso a agua potable:</dt>
+            <dd>Las altas temperaturas y falta de infraestructura pueden causar deshidratación.</dd>
+            <dt>Impacto:</dt>
+            <dd>Deshidratación, fatiga, disminución del rendimiento cognitivo.</dd>
+            <dt>Prevención:</dt>
+            <dd>Provisión de agua potable y espacios de sombra.</dd>
+    
+            <dt>Infraestructura inadecuada:</dt>
+            <dd>Las aulas pueden no estar bien adaptadas al clima extremo de La Guajira.</dd>
+            <dt>Impacto:</dt>
+            <dd>Fatiga, desmotivación, problemas de salud.</dd>
+            <dt>Prevención:</dt>
+            <dd>Aulas con aislamiento térmico y ventilación adecuada.</dd>
+        </dl>
+    
+        <h5>Riesgos Naturales Externos :</h5>
+        <dl>
+            <dt>Acceso limitado a alimentos:</dt>
+            <dd>Las sequías pueden reducir la disponibilidad de alimentos en la región.</dd>
+            <dt>Impacto:</dt>
+            <dd>Desnutrición, bajo rendimiento escolar.</dd>
+            <dt>Prevención:</dt>
+            <dd>Programas de alimentación escolar y comunitaria.</dd>
+    
+            <dt>Dificultades de transporte:</dt>
+            <dd>Condiciones climáticas extremas pueden dificultar el tránsito al colegio.</dd>
+            <dt>Impacto:</dt>
+            <dd>Ausentismo, tardanzas.</dd>
+            <dt>Prevención:</dt>
+            <dd>Adaptación de horarios escolares y provisión de transporte escolar comunitario.</dd>
+        </dl>
+    
+        <h5>Riesgos Socio-Naturales Internos y Externos:</h5>
+        <dl>
+            <dt>Enfermedades endémicas:</dt>
+            <dd>Condiciones higiénicas pueden propagar enfermedades en la escuela y en el hogar.</dd>
+            <dt>Impacto:</dt>
+            <dd>Ausentismo, problemas de salud.</dd>
+            <dt>Prevención:</dt>
+            <dd>Educación sobre higiene, programas de vacunación y promoción de prácticas saludables.</dd>
+    
+            <dt>Exposición a contaminantes:</dt>
+            <dd>Actividades mineras o agrícolas pueden afectar la calidad del agua o aire.</dd>
+            <dt>Impacto:</dt>
+            <dd>Enfermedades, problemas respiratorios, ausentismo.</dd>
+            <dt>Prevención:</dt>
+            <dd>Educación sobre filtración y purificación de agua, y promoción de prácticas agrícolas sostenibles.</dd>
+        </dl>
+    </div>
+    
+
+</div>
+<div class="overlay" *ngIf="isOverlayVisible" (click)="hideLargeImage()">
+    <img class="large-image" [src]="currentLargeImage" />
+</div>

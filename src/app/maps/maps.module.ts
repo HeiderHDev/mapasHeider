@@ -7,6 +7,7 @@ import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-loca
 import { AngularLogoComponent } from './components/angular-logo/angular-logo.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { InfoPanelTaloulumanaComponent } from './components/info-panel-taloulumana/info-panel-taloulumana.component';
 
 
 
@@ -18,7 +19,8 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     BtnMyLocationComponent,
     AngularLogoComponent,
     SearchBarComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    InfoPanelTaloulumanaComponent
   ],
   imports: [
     CommonModule

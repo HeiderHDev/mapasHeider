@@ -20,4 +20,10 @@ export class BtnMyLocationComponent {
     this.mapService.flyTo(this.placesService.userLocation!);
   }
 
+  goToMyComunitySchool() {
+    const schoolLocation: [ number, number ] = [ -72.2749325, 11.3632056 ];
+    if(!this.mapService.isMapReady) throw Error('No hay mapa disponible');
+    this.mapService.flyTo(schoolLocation);
+  }
+
 }
