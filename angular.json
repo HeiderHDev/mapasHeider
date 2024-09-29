@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mapasHeider:build:production"
+              "buildTarget": "mapasHeider:build:production"
             },
             "development": {
-              "browserTarget": "mapasHeider:build:development"
+              "buildTarget": "mapasHeider:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mapasHeider:build"
+            "buildTarget": "mapasHeider:build"
           }
         },
         "test": {
