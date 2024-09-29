@@ -8,7 +8,7 @@
 <div class="info-panel" *ngIf="isInfoPanelVisible || !isMobileScreen">
   <button (click)="toggleInfoPanel()" class="close-panel-button">✖️</button>
   <div class="info-section">
-    <h3>Docentes</h3>
+    <h3>Docentes y personal administrativo</h3>
     <img
       src="../../../../assets/Docentes.jpeg"
       alt="Docentes"
@@ -16,18 +16,22 @@
       (click)="showLargeImage('../../../../assets/Docentes.jpeg')"
     />
     <ul class="docente-list">
-      <li>Clemencia Polanco: <span>docente del grado quinto</span></li>
-      <li>Dora Gonzales: <span>docente del grado cuarto</span></li>
-      <li>Saira Ramires: <span>docente del grado cuarto</span></li>
-      <li>Miltesi Gonzales: <span>docente del grado tercero</span></li>
-      <li>Cristina: <span>docente del grado tercero</span></li>
-      <li>Laudith: <span>docente del grado segundo</span></li>
+      <li>Clemencia Polanco: <span>docente del grado segundo</span></li>
+      <li>Dora Gonzales: <span>docente del grado quinto</span></li>
+      <li>Saira Ramires: <span>docente del grado quinto</span></li>
+      <li>Miltesi Gonzales: <span>docente del grado cuarto</span></li>
+      <li>Cristina: <span>docente del grado cuarto</span></li>
+      <li>Laudith: <span>docente del grado tercero</span></li>
       <li>Saudith Weber: <span>docente del grado primero</span></li>
-      <li>Daivis Cambar: <span>docente del grado primero</span></li>
-      <li>Maria Celmira: <span>docente del grado prescolar</span></li>
+      <li>Daivis Cambar: <span>docente del grado segundo</span></li>
+      <li>Maria Celmira: <span>docente del grado primero</span></li>
       <li>Mayerli Cambar: <span>docente del grado prescolar</span></li>
       <li>Jose David Cambar Polanco: <span>docente del grado sexto</span></li>
       <li>Aislen Aroca: <span>docente del grado sexto</span></li>
+      <li>Sebastian Hernandez Ramirez: <span>Bibliotecario</span></li>
+      <li>Jose Arpushana: <span>Portero</span></li>
+      <li>Ilena: <span>Aseadora</span></li>
+      <li>Miriam: <span>Auxiliar de aseadora</span></li>
     </ul>
   </div>
   <div class="info-section">
@@ -52,7 +56,7 @@
           alt="Salones de clases"
           (click)="showLargeImage('../../../../assets/Salon de Laudith.jpeg')"
         />
-        <p>8 salones de clases</p>
+        <p>10 salones de clases</p>
       </div>
       <div class="infrastructure-item">
         <img
@@ -70,7 +74,23 @@
           alt="RH"
           (click)="showLargeImage('../../../../assets/RH.jpeg')"
         />
-        <p>2 RH para el aseo</p>
+        <p>1 Biblioteca</p>
+      </div>
+      <div class="infrastructure-item">
+        <img
+          src="../../../../assets/RH.jpeg"
+          alt="RH"
+          (click)="showLargeImage('../../../../assets/RH.jpeg')"
+        />
+        <p>1 RH para el aseo</p>
+      </div>
+      <div class="infrastructure-item">
+        <img
+          src="../../../../assets/enramada.jpeg"
+          alt="RH"
+          (click)="showLargeImage('../../../../assets/enramada.jpeg')"
+        />
+        <p>1 Enramada</p>
       </div>
       <div class="infrastructure-item">
         <img
@@ -86,7 +106,7 @@
           alt="Comedor"
           (click)="showLargeImage('../../../../assets/Comedor.jpeg')"
         />
-        <p>1 comedor en construcción</p>
+        <p>1 comedor</p>
       </div>
       <div class="infrastructure-item">
         <img
@@ -103,6 +123,16 @@
           (click)="showLargeImage('../../../../assets/Alberca.jpeg')"
         />
         <p>1 tanque de agua</p>
+      </div>
+      <div class="infrastructure-item">
+        <img
+          src="../../../../assets/salones en construccion.jpeg"
+          alt="Tanque de agua"
+          (click)="
+            showLargeImage('../../../../assets/salones en construccion.jpeg')
+          "
+        />
+        <p>2 salones en construcción</p>
       </div>
     </div>
   </div>

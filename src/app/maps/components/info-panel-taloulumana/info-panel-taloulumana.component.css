@@ -79,7 +79,10 @@ Info Panel Styles
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 440px;
+    width: 500px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .info-section {
@@ -129,7 +132,7 @@ Infrastructure List
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-basis: calc(33.33% - 20px);
-    height: 160px;
+    height: 180px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -140,7 +143,7 @@ Infrastructure List
 
 .infrastructure-item img {
     display: block;
-    height: auto;
+    height: 130px;
     width: 100%;
 }
 
